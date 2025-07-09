@@ -1,28 +1,40 @@
 body {
-  font: normal 20pt "Courier New";
+  font: normal 20pt "Courier New", monospace;
   background: linear-gradient(#bbe9db, #02251b);
+  margin: 0;
+  padding: 0;
 }
 
 header {
   background-color: #aeccc6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1em;
+  position: relative;
+  padding: 1em 2em;
   border-top-right-radius: 30%;
   border-bottom-left-radius: 30%;
   border: #648b84 5px double;
+  text-align: center;
 }
 
 header h1 {
   margin: 0;
+  font-size: 28pt;
+}
+
+.contador {
+  position: absolute;
+  top: 50%;
+  right: 2em;
+  transform: translateY(-50%);
+  font-size: 16pt;
+  color: darkgreen;
 }
 
 .container {
   display: flex;
   gap: 2em;
-  padding: 0;
+  padding: 2em;
   align-items: stretch;
+  justify-content: center;
 }
 
 .coluna {
@@ -30,6 +42,7 @@ header h1 {
   flex-direction: column;
   padding: 1em;
   flex: 1;
+  max-width: 400px;
 }
 
 .linha {
@@ -38,35 +51,41 @@ header h1 {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.5em;
-  height: 6em;
-  width: 100%;
+  margin-bottom: 1em;
   box-sizing: border-box;
   border: 1px solid #71a79a;
   border-radius: 20% 30% 50% 60%;
-  padding: 15px;
+  padding: 1em;
+  width: 100%;
 }
 
 .btn-produto {
-  font: bold 18pt "Courier New";
+  font: bold 18pt "Courier New", monospace;
   background-color: #9ba6a5;
   border: 1px solid #6d7c7b;
   border-radius: 10%;
   padding: 0.5em 1em;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-produto:hover {
+  background-color: #828c8b;
 }
 
 .linha p {
-  margin-top: 1em;
+  margin: 0.5em 0 0;
   font-size: 16pt;
   color: rgb(44, 44, 44);
   font-weight: bold;
+  text-align: center;
 }
 
-.preço p {
-  margin-top: 0;
+.preco p {
+  margin: 0.3em 0 0;
   font-size: 14pt;
-  color: rgb(0, 0, 0);
+  color: black;
+  font-weight: bold;
 }
 
 .rodape {
@@ -85,11 +104,5 @@ header h1 {
   border-radius: 5%;
   cursor: pointer;
   font-size: 16pt;
-}
-
-#contador {
-  position: absolute;
-  right: 1em;
-  font-size: 16pt;
-  color: darkgreen;
+  color: white;
 }
