@@ -1,0 +1,95 @@
+body {
+  font: normal 20pt "Courier New";
+  background: linear-gradient(#bbe9db, #02251b);
+}
+
+header {
+  background-color: #aeccc6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1em;
+  border-top-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  border: #648b84 5px double;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 2em;
+  padding: 0;
+  align-items: stretch;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  flex: 1;
+}
+
+.linha {
+  background-color: #9fd3c7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+  height: 6em;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #71a79a;
+  border-radius: 20% 30% 50% 60%;
+  padding: 15px;
+}
+
+.btn-produto {
+  font: bold 18pt "Courier New";
+  background-color: #9ba6a5;
+  border: 1px solid #6d7c7b;
+  border-radius: 10%;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.linha p {
+  margin-top: 1em;
+  font-size: 16pt;
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+}
+
+.preço p {
+  margin-top: 0;
+  font-size: 14pt;
+  color: rgb(0, 0, 0);
+}
+
+.rodape {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2em 5%;
+  align-items: center;
+  gap: 1em;
+}
+
+.rodape h3,
+.rodape button {
+  padding: 0.5em 1em;
+  background-color: #757a79;
+  border: 1px solid #5f6463;
+  border-radius: 5%;
+  cursor: pointer;
+  font-size: 16pt;
+}
+
+#contador {
+  position: absolute;
+  right: 1em;
+  font-size: 16pt;
+  color: darkgreen;
+}
