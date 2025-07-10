@@ -1,19 +1,21 @@
+import { useCart } from "../../context/cart-provider";
+import { Link } from "react-router-dom";
 import "./products.css";
 
-import React, { useState } from "react";
-
 export function ProductPage() {
-  const [carrinho, setCarrinho] = useState([]);
+  const { cart, setCart } = useCart();
 
   const addCarrinho = (product) => {
-    setCarrinho([...carrinho, product]);
+    setCart([...cart, product]);
   };
 
   return (
     <div>
       <header>
         <h1>PRODUTOS</h1>
-        <div className="contador">Carrinho: {carrinho.length} itens</div>
+        <Link to="/cart" className="contador">
+          Carrinho: {cart.length} itens
+        </Link>
       </header>
 
       <div className="container">

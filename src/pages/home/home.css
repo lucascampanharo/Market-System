@@ -1,6 +1,7 @@
 body {
   font: normal 20pt "Courier New";
   background: linear-gradient(#bbe9db, #6bcfb1);
+  min-height: 100vh;
 }
 
 .titulo {

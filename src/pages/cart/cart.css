@@ -18,37 +18,3 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-
-button {
-  font-size: 14pt;
-  margin-left: 1em;
-  background-color: #757a79;
-  border: 1px solid #5f6463;
-  color: white;
-  border: none;
-  padding: 0.3em 0.7em;
-  cursor: pointer;
-}
-
-#limpar {
-  margin-top: 1em;
-  font-size: 16pt;
-  padding: 0.5em 1em;
-  color: white;
-  background-color: #757a79;
-  border: 1px solid #5f6463;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-#finalizar {
-  display: flex;
-  justify-self: end;
-  font-size: 16pt;
-  padding: 0.5em 1em;
-  color: white;
-  background-color: #757a79;
-  border: 1px solid #5f6463;
-  border-radius: 10px;
-  cursor: pointer;
-}
