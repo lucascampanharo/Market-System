@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "./home.css";
 
 export function HomePage() {
-  // const irParaProdutos = () =>
   return (
     <main>
       <Link to={"/products"}>
